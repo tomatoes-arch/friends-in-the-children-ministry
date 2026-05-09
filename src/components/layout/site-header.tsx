@@ -16,7 +16,7 @@ export function SiteHeader() {
       <div className="page-shell flex min-h-20 items-center justify-between gap-4 py-3">
         <Link href="/" className="flex items-center gap-2 font-serif text-xl font-bold text-blue-800">
           <BookOpen size={30} />
-          <span>Friends in the Children Ministries</span>
+          <span>Friends in the Children Ministry</span>
         </Link>
         <nav className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 text-sm font-semibold text-[#2d6a4f]">
           {navItems.map((item) => (

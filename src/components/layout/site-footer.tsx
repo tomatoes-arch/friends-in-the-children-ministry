@@ -44,7 +44,7 @@ export function SiteFooter() {
           <section>
             <div className="flex items-center gap-2 font-serif text-xl font-bold">
               <BookOpen size={26} className="text-blue-300" />
-              <span>Friends in the Children Ministries</span>
+              <span>Friends in the Children Ministry</span>
             </div>
             <p className="mt-4 text-sm leading-6 text-white/75">
               Empowering Sunday school teachers with quality biblical education resources.
@@ -88,7 +88,7 @@ export function SiteFooter() {
           </section>
         </div>
         <div className="page-shell mt-10 border-t border-white/15 pt-6 text-center text-xs text-white/65">
-          &copy; 2026 Friends in the Children Ministries. All rights reserved.
+          &copy; 2026 Friends in the Children Ministry. All rights reserved.
         </div>
       </footer>
     </>

@@ -90,7 +90,7 @@ const testimonials = [
     church: "First Baptist Church",
     initials: "SM",
     quote:
-      "Friends in the Children Ministries has transformed my lesson planning. Everything I need is in one place."
+      "Friends in the Children Ministry has transformed my lesson planning. Everything I need is in one place."
   },
   {
     name: "James Thompson",
@@ -118,7 +118,7 @@ export default function HomePage() {
             </div>
             <div className="space-y-5">
               <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl">
-                Welcome to Friends in the Children Ministries
+                Welcome to Friends in the Children Ministry
               </h1>
               <p className="max-w-3xl text-lg leading-8 text-white/90 md:text-xl">
                 Empowering Sunday school teachers with engaging biblical lessons, multimedia
@@ -152,8 +152,8 @@ export default function HomePage() {
           </div>
           <div className="relative overflow-hidden rounded-[15px] bg-white/10 p-2 legacy-shadow">
             <Image
-              src="/ministry-hero.png"
-              alt="Illustration of a Sunday School teacher guiding children around an open lesson book"
+              src="/friends-children-hero.jpeg"
+              alt="Children gathered together during a Friends in the Children Ministry learning moment"
               width={1600}
               height={1000}
               priority
@@ -248,7 +248,7 @@ export default function HomePage() {
       <section className="bg-white py-16">
         <div className="page-shell">
           <h2 className="text-center text-3xl font-semibold">
-            Why Teachers Love Friends in the Children Ministries
+            Why Teachers Love Friends in the Children Ministry
           </h2>
           <p className="mx-auto mt-3 max-w-3xl text-center text-muted-foreground">
             Join our growing community of Sunday school teachers using our platform.

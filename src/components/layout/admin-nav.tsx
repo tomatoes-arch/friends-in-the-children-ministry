@@ -35,7 +35,7 @@ export function AdminNav({ displayName, email, sessionMode = "supabase", role }:
               <BookOpen size={18} />
             </div>
             <div>
-              <p className="font-semibold text-slate-900">Friends in the Children Ministries</p>
+              <p className="font-semibold text-slate-900">Friends in the Children Ministry</p>
               <p className="mt-1 text-xs text-slate-500">Publishing, care, and ministry operations</p>
               <span className="mt-2 inline-flex rounded-full bg-slate-950 px-2 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
                 Admin

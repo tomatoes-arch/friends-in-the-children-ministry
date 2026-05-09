@@ -40,7 +40,7 @@ export default function AboutPage() {
           <article className="rounded-[16px] bg-white p-8 legacy-shadow">
             <h2 className="text-3xl font-semibold text-blue-900">Our Mission</h2>
             <p className="mt-4 leading-8 text-muted-foreground">
-              Friends in the Children Ministries exists to equip Sunday school teachers with the
+              Friends in the Children Ministry exists to equip Sunday school teachers with the
               resources they need to teach God&apos;s Word in engaging, age-appropriate ways.
             </p>
             <p className="mt-4 leading-8 text-muted-foreground">

@@ -24,7 +24,7 @@ export async function POST(request: Request) {
   await supabase.auth.signOut();
 
   if (isFormPost) {
-    const response = NextResponse.redirect(new URL("/admin/login", request.url), { status: 303 });
+    const response = NextResponse.redirect(new URL("/", request.url), { status: 303 });
     return applySupabaseCookies(response);
   }
 
