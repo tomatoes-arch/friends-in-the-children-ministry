@@ -1,10 +1,11 @@
-name: CI
+name: CI v2
 
 on:
   push:
     branches: ["main", "staging", "feature/**", "hotfix/**"]
   pull_request:
     branches: ["main", "staging"]
+  workflow_dispatch:
 
 jobs:
   verify:
@@ -25,7 +26,7 @@ jobs:
       - name: Generate Prisma client
         run: npm run db:generate
 
-      - name: Lint
+      - name: Lint (ESLint)
         run: npx eslint .
 
       - name: Typecheck
