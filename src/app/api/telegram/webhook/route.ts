@@ -3,7 +3,9 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 
 import { db, isDatabaseConfigured } from "@/server/db/client";
+import { appLogger } from "@/server/observability/logger";
 import { assertRateLimit } from "@/server/security/rate-limit";
+import { buildTelegramLiveImportContent } from "@/server/services/telegram-live-import";
 
 const telegramUpdateSchema = z.object({
   update_id: z.number().int().optional(),
@@ -65,14 +67,18 @@ export async function POST(request: Request) {
     where: { messageId: String(message.message_id) },
     create: {
       messageId: String(message.message_id),
-      rawContent: payload as Prisma.InputJsonValue,
+      rawContent: buildTelegramLiveImportContent(message, null),
       status: "queued"
     },
     update: {
-      rawContent: payload as Prisma.InputJsonValue,
+      rawContent: buildTelegramLiveImportContent(message, null),
       status: "queued",
       errorMessage: null
     }
+  });
+
+  appLogger.info("telegram_webhook_queued", {
+    messageId: message.message_id
   });
 
   return NextResponse.json({ ok: true, queued: true }, { status: 202 });
