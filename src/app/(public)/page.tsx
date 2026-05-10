@@ -122,7 +122,7 @@ export default function HomePage() {
               </h1>
               <p className="max-w-3xl text-lg leading-8 text-white/90 md:text-xl">
                 Empowering Sunday school teachers with engaging biblical lessons, multimedia
-                resources, and teaching tools designed to bring God's Word to life.
+                resources, and teaching tools designed to bring God&apos;s Word to life.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -282,7 +282,7 @@ export default function HomePage() {
                   5 STARS
                 </span>
                 <p className="mt-4 text-sm italic leading-7 text-muted-foreground">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="mt-6 flex items-center gap-4">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 font-bold text-white">
